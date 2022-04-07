@@ -15,7 +15,7 @@ public class OddSum {
 		 add+=count;
 		 }while(count<num);
 		 
-		 System.out.println("odd numbers sum is "+ add);
+		 System.out.println("Odd numbers Sum is "+ add);
 	}
 
 }
