@@ -1,10 +1,12 @@
 import java.util.Scanner;
 public class TimeConverter {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 
 		int hours,minutes;
+		 int choice;
 
 		 Scanner input =new Scanner(System.in);
  System.out.println("Enter the amount of hours: ");
@@ -16,29 +18,82 @@ public class TimeConverter {
 		 minutes=hours*60;
 
 		 System.out.println(minutes+" minutes in "+hours+" hours");
+		 
+		 
+		 
+		 
+		 System.out.println("Enter 1 for hours to minutes");
+
+		 System.out.println("Enter 2 for days to hours");
+
+		 System.out.println("Enter 3 for minutes to hours");
+
+		 System.out.println("Enter 4 for hours to days");
+
+		 choice=input.nextInt();
+
+		 if(choice==1)
+		 {
+
+		 hourstodays();
 
 		 }
+		 else if(choice==2)
+		 {
 
-		  public static void daystohours(){
+		 daystohours();
 
-		 int hours,days;
+		 }
+		 else if(choice==3)
+		 {
 
-		 Scanner input =new Scanner(System.in);
+		 hourstodays();
 
-		 System.out.println("Enter the amount of days: ");
+		 }
+		 else
+		 {
 
-		 days=input.nextInt();
+		 hourstodays();
+		 }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 
-		 input.close();
+	}
+	
+	
+	
+	
 
-		 hours=days*24;
+		  public static void daystohours()
+		  {
 
-		 System.out.println(hours+" hours in "+days+" days");
+			 int hours,days;
+	
+			 Scanner input =new Scanner(System.in);
+	
+			 System.out.println("Enter the amount of days: ");
+	
+			 days=input.nextInt();
+	
+			 input.close();
+	
+			 hours=days*24;
+	
+			 System.out.println(hours+" hours in "+days+" days");
 
 		 }
 
 		 
- public static void minutestohours(){
+ public static void minutestohours()
+ {
 
 		 int hours,minutes;
 
@@ -54,8 +109,10 @@ public class TimeConverter {
 
 		 System.out.println(hours+" hours in "+minutes+" minutes");
 
-		 }
- public static void hourstodays(){
+		 
+ }
+ public static void hourstodays()
+ {
 
 		 int hours,days;
 
@@ -71,38 +128,8 @@ public class TimeConverter {
 
 		 System.out.println(days+" days in "+hours+" hours");
 
-		 }
+		 
+ }
 
-		 int choice;
-
-		 Scanner input=new Scanner(System.in);
-
-		System.out.println("Enter 1 for hours to minutes");
-
-		 System.out.println("Enter 2 for days to hours");
-
-		 System.out.println("Enter 3 for minutes to hours");
-
-		 System.out.println("Enter 4 for hours to days");
-
-		 choice=input.nextInt();
-
-		 if(choice==1){
-
-		 hourstodays();
-
-		 }else if(choice==2){
-
-		 daystohours();
-
-		 }else if(choice==3){
-
-		 hourstodays();
-
-		 }else {
-
-		 hourstodays();
-
-		 }
-}
+		
 }
