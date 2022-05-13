@@ -1,6 +1,6 @@
 
 public class C6CRT {
-	/* Ahmed S Chapter 6 #2-7
+	// Ahmed S Chapter 6 #2-7
 /* 
 2. Method declaration is the first line which contains the method name, access level, return type, and parameters. The method body contains the statements that implement it.
 3. Access modifier
@@ -13,5 +13,5 @@ Var1 is declared in main(). Var 2 is declared in main() for statement. Var3 is d
 7a. By types, order and number of parameters
 7b. Yes, only if the compiler can differentiate the methods with parameters
 
-
+*/
 }
