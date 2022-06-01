@@ -1,3 +1,5 @@
+import static java.lang.System.in;
+
 import java.util.Scanner;
 
 public class Mysavings {
@@ -6,7 +8,7 @@ public class Mysavings {
 		// TODO Auto-generated method stub
 
 		int choice = 7;
-		Mysavings myPiggyBank = new Mysavings();
+		new Mysavings();
 		
 		while(choice != 0);	
 		
@@ -19,7 +21,8 @@ public class Mysavings {
 		System.out.println("5. Add a quarter to the bank");
 		System.out.println("6. Take money out of the bank");
 		System.out.println("\nPlease enter the corresponding number of yourchoice\n");
-		Scanner input = new Scanner(System.in);
+		@SuppressWarnings({ "unused", "resource" })
+		Scanner scanner = new Scanner(in);
 		
 		
 		
